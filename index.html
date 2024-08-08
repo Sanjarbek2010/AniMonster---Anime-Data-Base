@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniMonster</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Notification</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample2" aria-labelledby="offcanvasExampleLabel2">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Liked</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample3" aria-labelledby="offcanvasExampleLabel3">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">wishlist</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas account-off offcanvas-end" tabindex="-1" id="offcanvasExample4" aria-labelledby="offcanvasExampleLabel4">
+        <div class="offcanvas-header">
+           <div class="circle">
+            <img src="./img/pexels-mohamed-abdelghaffar-771742.jpg" class="img-fluid" alt="">
+           </div>
+           <div class="info">
+            <p class="name">Sanjarbek</p>
+            <p class="ename">sanjarbeks650@gmail.com</p>
+           </div>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li>
+                    <a href="#">
+                        <button>
+                            <p><i class="bi bi-person-circle"></i> Profile</p>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <button>
+                            <p><i class="bi bi-person-circle"></i> VIP</p>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <button>
+                            <p><i class="bi bi-person-circle"></i> Pop-up</p>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <button>
+                            <p><i class="bi bi-person-circle"></i> Balance</p>
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <button>
+                            <p><i class="bi bi-person-circle"></i> Settings</p>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+            <div class="log-out">
+                <button>
+                    <p><i class="bi bi-arrow-left"></i> Log out</p>
+                    
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <header class="navv">
+        <div class="block_00">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 d-flex align-items-center">
+                        <a href="./index.html">
+                            <h1>Ani<span class="p">p</span>lan</h1>
+                            <!-- <h1>seeAnime</h1> -->
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="links">
+                            <ul class="ul-nav">
+                                <li class="liink">
+                                    <a href="#" class="link active a-liink">
+                                        <p>Home <i> > </i></p>
+                                    </a>
+                                    <div class="drop-down">
+                                        <ul>
+                                            <li>
+                                                <a class="aa" href="#ongoing">
+                                                    <p>Ongoing Tops</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="aa" href="#russian">
+                                                    <p>Russian Animes</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="aa" href="#">
+                                                    <p>New Animes</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="aa" href="#">
+                                                    <p>Dubbed</p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="liink">
+                                    <a href="./pages/trending.html" class="link">
+                                        <p>Trending <i> > </i></p>
+                                    </a>
+                                    <div class="drop-down">
+                                        <div class="attender d-flex justify-content-flex-start">
+                                            <ul>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>Trending</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>Trending tops</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>New Animes</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>Subbed</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>Rus Trending</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>Rus Trending tops</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>Rus New Animes</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="aa" href="#">
+                                                        <p>Rus Subbed</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="liink">
+                                    <a href="#" class="">
+                                        <p>Genres <i> > </i></p>
+                                        <div class="drop-down">
+                                            <div class="attender d-flex justify-content-flex-start">
+                                                <ul>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Drama</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Romance</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Action</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Fantasy</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>School</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Comedy</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Dark Fantasy</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Hentai</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Syonen</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Magic</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Etti</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Others...</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="liink">
+                                    <a href="#" class="">
+                                        <p>Tops</p>
+                                    </a>
+                                </li>
+                                <li class="liink">
+                                    <a href="#" class="">
+                                        <p>Ongoing <i> > </i></p>
+                                        <div class="drop-down">
+                                            <div class="attender d-flex justify-content-flex-start">
+                                                <ul>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>English</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Russian</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>Uzbek</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="aa" href="#">
+                                                            <p>On Demand</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="liink">
+                                    <a href="#" class="">
+                                        <p>Contact</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-1">
+                        <form action="" class="form"><input class="search-input" type="search" name="search" id="search"
+                                placeholder="Search Anime..."><i class="bi bi-search"></i></form>
+                    </div>
+                    <div class="col-lg-2 d-flex align-items-center">
+                        <div class="params">
+
+
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample">
+                                <i class="bi bi-envelope"></i>
+                            </button>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample2"
+                                aria-controls="offcanvasExample2">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample3"
+                                aria-controls="offcanvasExample3">
+                                <i class="bi bi-cart3"></i>
+                            </button>
+                            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample4"
+                                aria-controls="offcanvasExample4">
+                                <i class="bi bi-person"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="home-info">
+                                <img src="./img/demonpng.png" alt="">
+                                <h6>88+ Dub/Sub</h6>
+                                <p class="info-p">
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="./pages/index.html">
+                                    <button class="btn-home">
+                                        <p>Watch Now</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dark-fon"
+                    style=" background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0% 43%, transparent, rgba(0, 0, 0, 0.94) 97%);">
+                </div>
+                <!-- <div class="dark-fon"></div> -->
+                <img src="./img/demon.jpg" class="d-block carousel-dark img-fluid lsa" style="margin-left: 600px;"
+                    alt="Component">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="home-info">
+                                <img src="./img/aotpng.png" alt="">
+                                <h6>90+ Dub/Sub</h6>
+                                <p class="info-p">
+                                    Shingeki no Kyojin, or more popularly known as Attack On Titan, is originally a
+                                    manga written and illustrated by Hajime Isayama and was released on the 9th of
+                                    September in 2009 in the Bessatsu Shōnen Magazine. Attack on Titan (AOT) the anime
+                                    is based on the manga without any new adaptations, and it aired its first episode on
+                                    the 7th of April in 2013.
+                                </p>
+                                <a href="#">
+                                    <button class="btn-home">
+                                        <p>Watch Now</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dark-fon"></div>
+                <img src="./img/aot.jpg" class="d-block carousel-dark img-fluid lsa" alt="Component">
+            </div>
+            <div class="carousel-item ">
+                <div class="carousel-caption d-none d-md-block">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="home-info">
+                                <img src="./img/naruto.png" alt="">
+                                <h6>500+ Dub/Sub</h6>
+                                <p class="info-p">
+                                    Naruto Shippuden is a continuation of the story of Naruto. The main character,
+                                    Naruto Uzumaki, experiences great discrimination and “Othering”. He goes through
+                                    this because he has a monster that is sealed within him that almost destroyed the
+                                    village that is from. For this reason alone, he is constantly berated and treated as
+                                    lower than everyone even though it was not his choice to have this beast sealed
+                                    inside of him.
+                                </p>
+                                <a href="#">
+                                    <button class="btn-home">
+                                        <p>Watch Now</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dark-fon"></div>
+                <img src="./img/HD-wallpaper-naruto-naruto-uzumaki.jpg" class="d-block carousel-dark img-fluid lsa"
+                    alt="Component">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="ongoing">
+        <div class="block_01">
+            <div class="container">
+                <div class="row" id="ongoing">
+                    <div class="title">
+                        <p>Ongoing Tops...</p>
+                    </div>
+                </div>
+                <div class="row column-boxes">
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/box1.avif" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Demon Slayer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/bleachbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Bleach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/aotbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Attack on Titan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/one piece.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>One Piece</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/fakelovebox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Fake Love</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 last">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/hunterxbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Hunter X Hunter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="russian">
+                    <div class="title">
+                        <p>Russian Animes...</p>
+                    </div>
+                </div>
+                <div class="row column-boxes">
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/monsterbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Monster</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/narutobox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Naruto: Shippuden</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/rentbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Rent Girl for an hour</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/shadowbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>The Eminence in Shadow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/spyxbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Spy X Family</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="anime-box">
+                            <div class="img-box">
+                                <img src="./img/aotbox.jpg" class="img-fluid" alt="DemonSlayer">
+                            </div>
+                            <div class="hide-info">
+                                <h6>88+ Dub/Sub</h6>
+                                <p>
+                                    Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4] is a Japanese manga series written and illustrated by Koyoharu
+                                    Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump
+                                    from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes.
+                                    It has been published in English by Viz Media and simultaneously on the Manga Plus
+                                    platform by Shueisha. It follows teenage Tanjiro Kamado, who strives to become a
+                                    Demon Slayer after his family was slaughtered and his younger sister, Nezuko, is
+                                    turned into a demon.
+                                </p>
+                                <a href="#"><button> <i class="bi bi-arrow-right"></i></button></a>
+                            </div>
+                            <div class="info-box">
+                                <p>Attack on Titan : S3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skill">
+        <div class="block_01 rosen">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1>
+                            <span data-purecounter-duration="1" data-purecounter-end="100" class="purecounter"></span>
+                            +
+                        </h1>
+                        <p>Dubbed</p>
+                    </div>
+                    <div class="col">
+                        <h1>
+                            <span data-purecounter-duration="1" data-purecounter-end="341" class="purecounter"></span>
+                        </h1>
+                        <p>Subbed</p>
+                    </div>
+                    <div class="col">
+                        <h1>
+                            <span data-purecounter-duration="1" data-purecounter-end="14" class="purecounter"></span>
+                        </h1>
+                        <p>Genres</p>
+                    </div>
+                    <div class="col">
+                        <h1>
+                            <span data-purecounter-duration="1" data-purecounter-end="10" class="purecounter"></span>
+                            +
+                        </h1>
+                        <p>Ongoing</p>
+                    </div>
+                    <div class="col">
+                        <h1>
+                            <span data-purecounter-duration="1" data-purecounter-end="3" class="purecounter"></span>
+                        </h1>
+                        <p>Languages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recommedation">
+        <div class="block_01">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5">
+
+                        <div class="head">
+                            <div class="hiding-text text1 active">
+                                <h1>Demon Slayer</h1>
+                                <p>Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, rgh. "Blade of Demon
+                                    Destruction")[4]
+                                    is a Japanese manga series written and illustrated by Koyoharu Gotouge. It was
+                                    serialized in
+                                    Shueisha's shōnen manga magazine Weekly Shōnen Jump from February 2016 to May 2020,
+                                    with
+                                    its
+                                    chapters collected in 23 tankōbon volumes. It has been published in English by Viz
+                                    Media
+                                    and
+                                    simultaneously on the Manga Plus platform by Shueisha.
+                                </p>
+                                <a href="./pages/wanime.html">
+                                    <button class="btn-home">
+                                        <p>Watch Now</p>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="hiding-text text2">
+                                <h1>Bleach</h1>
+                                <p>
+                                    Bleach (stylized in all caps) is a Japanese anime television series based on Tite
+                                    Kubo's original manga series of the same name. It was produced by Pierrot and
+                                    directed by Noriyuki Abe. The series aired on TV Tokyo from October 2004 to March
+                                    2012, spanning 366 episodes. The story follows the adventures of Ichigo Kurosaki
+                                    after he obtains the powers of a Soul Reaper—a death personification similar to the
+                                    Grim Reaper—from another Soul Reaper, Rukia Kuchiki. His newfound powers force him
+                                    to take on the duties of defending humans from evil spirits and guiding departed
+                                    souls to the afterlife. In addition to adapting the manga series it is based on, the
+                                    anime periodically includes original self-contained storylines and characters not
+                                    found in the source material.
+                                </p>
+                                <a href="./pages/wanime.html">
+                                    <button class="btn-home">
+                                        <p>Watch Now</p>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="hiding-text text3">
+                                <h1>Attack on Titan</h1>
+                                <p>
+                                    Shingeki no Kyojin, or more popularly known as Attack On Titan, is originally a
+                                    manga written and illustrated by Hajime Isayama and was released on the 9th of
+                                    September in 2009 in the Bessatsu Shōnen Magazine. Attack on Titan (AOT) the anime
+                                    is based on the manga without any new adaptations, and it aired its first episode on
+                                    the 7th of April in 2013.
+                                </p>
+                                <a href="./pages/wanime.html">
+                                    <button class="btn-home">
+                                        <p>Watch Now</p>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="hiding-text text4">
+                                <h1>Monster</h1>
+                                <p>
+                                    Monster (stylized in all caps) is a Japanese manga series written and illustrated by
+                                    Naoki Urasawa. It was published by Shogakukan in its seinen manga magazine Big Comic
+                                    Original between December 1994 and December 2001, with its chapters collected in 18
+                                    tankōbon volumes. The story revolves around Kenzo Tenma, a Japanese surgeon living
+                                    in Düsseldorf, Germany whose life enters turmoil after he gets himself involved with
+                                    Johan Liebert, one of his former patients, who is revealed to be a psychopathic
+                                    serial killer.
+                                </p>
+                                <a href="./pages/wanime.html">
+                                    <button class="btn-home">
+                                        <p>Watch Now</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="images">
+                            <div class="hoverboard e1">
+                                <div class="box"><img src="./img/box1.avif" class="img-fluid" alt="recommedation1">
+                                </div>
+                            </div>
+                            <div class="hoverboard e2">
+                                <div class="box"><img src="./img/bleachbox.jpg" class="img-fluid" alt="recommedation2">
+                                </div>
+                            </div>
+                            <div class="hoverboard e3">
+                                <div class="box"><img src="./img/aotbox.jpg" class="img-fluid" alt="recommedation3">
+                                </div>
+                            </div>
+                            <div class="hoverboard e4">
+                                <div class="box"><img src="./img/monsterbox.jpg" class="img-fluid" alt="recommedation4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/purecounter.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquary.js"></script>
+    <script src="./js/jmain.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
